@@ -1,4 +1,5 @@
-#
+# train 
+
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -58,6 +59,7 @@ print(X.shape)
 print(Y.shape)
 lr = 0.003
 step = 100000
+
 me = np.array([1, 0, 50, 0, 3, 100])    # classe, 0 M  1 F, age, parenti
 w, b, losses, accuracies = logreg_train(
     X, Y, lr, step)  # x, y, learning rate, step
